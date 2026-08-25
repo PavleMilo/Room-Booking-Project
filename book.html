@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+</head>
+<body>
+    <header>
+        <h1>Book a study-room</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="book.html">Book a room</a>
+            <a href="bookings.html">Bookings</a>
+            <a href="contacts.html">Contacts</a>            
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Book a room here:</h2>
+                <label for="Name">Full Name:</label>
+                    <input required name="Name" type="text" placeholder="Full name here...">
+                <label for="Epost">Email:</label>
+                    <input required name="Epost" type="email" placeholder="...@gmail.com">
+        </article>
+        <section>
+            <h2>Choose a room</h3>
+                <select>
+                    <option value="Room2B">Room 2B</option>
+                    <option value="Room5R">Room 5R</option>
+                    <option value="Room10F">Room 10F</option>
+                </select>
+
+            <h3 for="date">Select a date and time</h3>
+                    <input name="date" type="datetime-local">
+
+            <h3 for="TimeDone">Select what time your done</h3>
+                <input name="TimeDone" type="time">
+        </section>
+        <section>
+            <h3 for="Purpose">What is your purpose</h3>
+                <textarea name="Purpose" rows="5" cols="30"></textarea>
+            <h3 for="People">Amount of people:</h3>
+                <input name="People" type="number" min="1" max="5">
+            <br></br>
+                <label for="checkbox">Accept the user agreement</label>
+                    <input name="checkbox" type="checkbox">
+                        <br></br>
+                <input type="sumbit">
+        </section>
+    </main>
+    <footer>
+        <h3>Kontaktinformation:</h3>
+            <p>Instagram: ononfoans</p>
+            <p>Facebook: aonngoa</p>
+                <br></br>
+            <p>E-post: onfoan@gmail.com</p>
+            <p>Telefonummer: +46 039 991</p>
+    </footer>
+</body>
+</html>
