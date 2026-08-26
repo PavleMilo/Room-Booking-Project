@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <h1>Book a study-room</h1>
@@ -13,50 +16,53 @@
             <a href="rooms.html">Rooms</a>
             <a href="book.html">Book a room</a>
             <a href="bookings.html">Bookings</a>
-            <a href="contacts.html">Contacts</a>            
+            <a href="contacts.html">Contacts</a>
         </nav>
     </header>
     <main>
-        <article>
+        <article class="book-form-group">
             <h2>Book a room here:</h2>
-                <label for="Name">Full Name:</label>
-                    <input required name="Name" type="text" placeholder="Full name here...">
-                <label for="Epost">Email:</label>
-                    <input required name="Epost" type="email" placeholder="...@gmail.com">
+            <label for="Name">Full Name:</label>
+            <input required name="Name" type="text" placeholder="Full name here..." id="Name">
+            <label for="Epost">Email:</label>
+            <input required name="Epost" type="email" placeholder="...@gmail.com" id="Epost">
         </article>
-        <section>
-            <h2>Choose a room</h3>
-                <select>
-                    <option value="Room2B">Room 2B</option>
-                    <option value="Room5R">Room 5R</option>
-                    <option value="Room10F">Room 10F</option>
-                </select>
+        <section class="book-form-group">
+            <h2>Choose a room</h2>
+            <select id="roomSelect">
+                <option value="Room2B">Room 2B</option>
+                <option value="Room5R">Room 5R</option>
+                <option value="Room10F">Room 10F</option>
+            </select>
 
-            <h3 for="date">Select a date and time</h3>
-                    <input name="date" type="datetime-local">
+            <label for="date">Select a date and time</label>
+            <input name="date" type="datetime-local" id="date">
 
-            <h3 for="TimeDone">Select what time your done</h3>
-                <input name="TimeDone" type="time">
+            <label for="TimeDone">Select what time your done</label>
+            <input name="TimeDone" type="time" id="TimeDone">
         </section>
-        <section>
-            <h3 for="Purpose">What is your purpose</h3>
-                <textarea name="Purpose" rows="5" cols="30"></textarea>
-            <h3 for="People">Amount of people:</h3>
-                <input name="People" type="number" min="1" max="5">
-            <br></br>
-                <label for="checkbox">Accept the user agreement</label>
-                    <input name="checkbox" type="checkbox">
-                        <br></br>
-                <input type="sumbit">
+        <section class="book-form-group">
+            <label for="Purpose">What is your purpose</label>
+            <textarea name="Purpose" rows="5" cols="30" id="Purpose"></textarea>
+            <label for="People">Amount of people:</label>
+            <input name="People" type="number" min="1" max="5" id="People">
+            <br>
+            <label for="checkbox">Accept the user agreement</label>
+            <input name="checkbox" type="checkbox" id="checkbox">
+            <br>
+            <input type="submit" value="Book Room">
         </section>
     </main>
     <footer>
         <h3>Kontaktinformation:</h3>
-            <p>Instagram: ononfoans</p>
-            <p>Facebook: aonngoa</p>
-                <br></br>
-            <p>E-post: onfoan@gmail.com</p>
-            <p>Telefonummer: +46 039 991</p>
+        <section class="contact-info">
+            <p class="contact-item">Instagram: ononfoans</p>
+            <p class="contact-item">Facebook: aonngoa</p>
+            <p class="contact-item">E-post: onfoan@gmail.com</p>
+            <p class="contact-item">Telefonummer: +46 039 991</p>
+        </section>
     </footer>
+    
 </body>
+
 </html>
